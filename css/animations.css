@@ -1,0 +1,50 @@
+/* Animaciones para la transición */
+
+/* Desvanecimiento del sobre abierto */
+@keyframes fadeOutOverlay {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+/* Desvanecimiento de la pantalla blanca después del sobre */
+@keyframes fadeInWhite {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Animación de aparición para la invitación */
+@keyframes fadeInInvitation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Clases de animación */
+.fade-out-overlay {
+    animation: fadeOutOverlay 0.8s ease-in-out forwards;
+}
+
+.fade-in-white {
+    animation: fadeInWhite 0.5s ease-in forwards;
+}
+
+.fade-in-invitation {
+    animation: fadeInInvitation 0.6s ease-out forwards;
+}
+
+/* Clase para ocultar elementos con animación */
+.hidden-animated {
+    opacity: 0;
+    transition: opacity 0.5s ease-out;
+}
