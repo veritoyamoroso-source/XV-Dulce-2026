@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XV Años | Dulce Fernanda</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Cormorant+Garamond:wght@300;400;500;600;700&family=Cinzel:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+
+    <audio id="musica" preload="auto" loop>
+        <source src="audio/musica.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- SOBRE -->
+    <section id="intro">
+        <div class="sobreScene">
+            <div id="sobreBox">
+                <img id="sobre" src="img/sobreCerrado.png" alt="Sobre Cerrado">
+            </div>
+            <p class="abrir">Toca el sobre para abrir la invitación</p>
+        </div>
+    </section>
+
+    <div id="flash"></div>
+
+    <!-- INVITACIÓN con elementos superpuestos -->
+    <main id="invitacion">
+        <div id="invitacion-wrapper">
+            <img id="invitacion-img" src="img/Invitacion.png" alt="Invitación">
+            
+            <!-- Elementos superpuestos (barrocos / dorados) -->
+            <div id="acciones">
+                <!-- Botón de Google Maps -->
+                <a href="https://maps.app.goo.gl/SkzXP5drL4N2ewtV7" target="_blank" rel="noopener noreferrer" id="btn-mapa">
+                    📍 Ver ubicación en Google Maps
+                </a>
+
+                <!-- Bloque de confirmación -->
+                <div id="confirmacion">
+                    <label for="nombre-input">Confirma tu asistencia, escribe tu nombre completo</label>
+                    <input type="text" id="nombre-input" placeholder="Tu nombre completo" autocomplete="off">
+                    <button id="btn-confirmar">Confirmar</button>
+                    <div id="mensaje-confirmacion" class="oculto"></div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
